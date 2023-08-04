@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&family=Montserrat:ital,wght@0,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&family=Montserrat:ital,wght@0,500;1,700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
   margin: 0;
 }
 body {
-  background-color: #f2f2f2;
+  background-color: #f2eae2;
 }
 .container {
   width: 600px;
@@ -27,14 +27,15 @@ body {
   width: 300px;
   height: 450px;
   padding: 32px;
+  background-color: #ffffff;
 }
-.text-description{
-    max-width: 236px;
+.text-description {
+  max-width: 236px;
 }
 
 .subtitle {
   margin-bottom: 20px;
-  font-family: 'Montserrat'; sans-serif;
+  font-family: "Montserrat";
   font-weight: 500;
   letter-spacing: 5px;
   line-height: 14.63;
@@ -43,11 +44,12 @@ body {
 
 h1 {
   margin-bottom: 24px;
-  font-family: "fraunces"; serif;
+  font-family: "fraunces";
   font-size: 32px;
   font-weight: 700px;
   line-height: 32px;
   color: #1c2338;
+  text-align: justify;
 }
 p {
   margin-bottom: 29px;
@@ -73,12 +75,17 @@ p {
   font-size: 32px;
   line-height: 32px;
   color: #3d8168;
-
 }
 .original-value {
   font-size: 13px;
   line-height: 23px;
   text-decoration: line-through;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  color: #6c7289;
 }
 button {
   width: 236px;
@@ -95,4 +102,39 @@ button {
 }
 button img {
   margin-right: 11.61px;
+}
+button:hover {
+  background: #1a4032;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 343px;
+    height: 611px;
+    flex-direction: column;
+  }
+}
+.img-container {
+  height: 240px;
+  width: 343px;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url(./images/image-product-mobile.jpg);
+}
+.description {
+  padding: 24px;
+}
+.text-description {
+  width: 295px;
+}
+h3 {
+  margin-bottom: 112px;
+}
+h1 {
+  margin-bottom: 16px;
+  width: 295px;
+}
+p {
+  margin-bottom: 24px;
+}
+.value {
+  margin-bottom: 20px;
 }
